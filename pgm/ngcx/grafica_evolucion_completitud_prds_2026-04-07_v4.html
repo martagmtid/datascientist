@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grafica evolucion PRDs 2026-04-07 v4</title>
+  <style>
+    body{margin:0;background:#f5f7fb;color:#1f2937;font:15px/1.45 Arial,sans-serif}
+    .wrap{max-width:1140px;margin:24px auto;padding:0 16px 24px}
+    .panel{background:#fff;border:1px solid #d1d5db;border-radius:12px;padding:18px;margin-bottom:18px}
+    h1{margin:0 0 8px;font-size:28px} h2{margin:0 0 10px;font-size:20px;color:#123b63} h3{margin:0 0 8px;font-size:16px}
+    .muted{color:#6b7280} .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+    .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+    table{width:100%;border-collapse:collapse} th,td{border:1px solid #d1d5db;padding:8px 10px;text-align:left}
+    th{background:#edf3f9} .num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+    .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .mini{border:1px solid #e5e7eb;border-radius:10px;padding:10px}
+    .mini-legend{margin:6px 0 0;color:#4b5563;font-size:12px}
+    .s{display:inline-block;width:18px;height:3px;vertical-align:middle;margin:0 6px 0 10px}
+    .s.real{background:#111827;border-top:2px dashed #111827;height:0}
+    @media (max-width: 1000px){.mini-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <h1>Evolucion esperada de completitud por PRD (v4)</h1>
+      <p class="muted">Reglas: NGCX-2136 y NGCX-2585 al 100% en 20/05/2026; NGCX-2169 y NGCX-2609 al 100% en 17/06/2026.</p>
+      <div class="legend">
+        <span><span class="dot" style="background:#1d4ed8"></span>NGCX-2136</span>
+        <span><span class="dot" style="background:#059669"></span>NGCX-2169</span>
+        <span><span class="dot" style="background:#b45309"></span>NGCX-2585</span>
+        <span><span class="dot" style="background:#be185d"></span>NGCX-2609</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Grafica general esperada</h2>
+      <svg viewBox="0 0 1000 420">
+        <line x1="70" y1="40" x2="70" y2="340" stroke="#eef2f7" /><line x1="198.57142857142858" y1="40" x2="198.57142857142858" y2="340" stroke="#eef2f7" /><line x1="327.14285714285717" y1="40" x2="327.14285714285717" y2="340" stroke="#eef2f7" /><line x1="455.7142857142857" y1="40" x2="455.7142857142857" y2="340" stroke="#eef2f7" /><line x1="584.2857142857143" y1="40" x2="584.2857142857143" y2="340" stroke="#eef2f7" /><line x1="712.8571428571429" y1="40" x2="712.8571428571429" y2="340" stroke="#eef2f7" /><line x1="841.4285714285714" y1="40" x2="841.4285714285714" y2="340" stroke="#eef2f7" /><line x1="970" y1="40" x2="970" y2="340" stroke="#eef2f7" />
+        <line x1="70" y1="340" x2="970" y2="340" stroke="#dbe3ee" /><line x1="70" y1="280" x2="970" y2="280" stroke="#dbe3ee" /><line x1="70" y1="220" x2="970" y2="220" stroke="#dbe3ee" /><line x1="70" y1="160" x2="970" y2="160" stroke="#dbe3ee" /><line x1="70" y1="100" x2="970" y2="100" stroke="#dbe3ee" /><line x1="70" y1="40" x2="970" y2="40" stroke="#dbe3ee" />
+        <line x1="584.2857142857143" y1="40" x2="584.2857142857143" y2="340" stroke="#7c3aed" stroke-dasharray="6 4" stroke-width="1.5" />
+      <text x="588.2857142857143" y="54" fill="#6d28d9" font-size="11">Hito eSIM 100% (20/05/26)</text><line x1="970" y1="40" x2="970" y2="340" stroke="#7c3aed" stroke-dasharray="6 4" stroke-width="1.5" />
+      <text x="974" y="54" fill="#6d28d9" font-size="11">Hito O2 100% (17/06/26)</text>
+        <rect x="70" y="40" width="900" height="300" fill="none" stroke="#9ca3af" />
+        <polyline fill="none" stroke="#1d4ed8" stroke-width="3" points="70,187.89076923076925 198.57142857142858,157.64038461538462 327.14285714285717,107.22307692307695 455.7142857142857,56.805769230769215 584.2857142857143,40 712.8571428571429,40 841.4285714285714,40 970,40" /><polyline fill="none" stroke="#059669" stroke-width="3" points="70,247.738 198.57142857142858,221.77075 327.14285714285717,178.49200000000002 455.7142857142857,135.21325000000002 584.2857142857143,120.787 712.8571428571429,89.04925 841.4285714285714,60.19675000000001 970,40" /><polyline fill="none" stroke="#b45309" stroke-width="3" points="70,197.76538461538462 198.57142857142858,165.4951923076923 327.14285714285717,111.71153846153848 455.7142857142857,57.92788461538464 584.2857142857143,40 712.8571428571429,40 841.4285714285714,40 970,40" /><polyline fill="none" stroke="#be185d" stroke-width="3" points="70,280.813 198.57142857142858,250.71137499999998 327.14285714285717,200.542 455.7142857142857,150.372625 584.2857142857143,133.64949999999996 712.8571428571429,96.85862500000002 841.4285714285714,63.412375 970,40" />
+        <text x="70" y="364" text-anchor="middle" fill="#6b7280" font-size="12">06/04/26</text><text x="198.57142857142858" y="364" text-anchor="middle" fill="#6b7280" font-size="12">15/04/26</text><text x="327.14285714285717" y="364" text-anchor="middle" fill="#6b7280" font-size="12">30/04/26</text><text x="455.7142857142857" y="364" text-anchor="middle" fill="#6b7280" font-size="12">15/05/26</text><text x="584.2857142857143" y="364" text-anchor="middle" fill="#6b7280" font-size="12">20/05/26</text><text x="712.8571428571429" y="364" text-anchor="middle" fill="#6b7280" font-size="12">31/05/26</text><text x="841.4285714285714" y="364" text-anchor="middle" fill="#6b7280" font-size="12">10/06/26</text><text x="970" y="364" text-anchor="middle" fill="#6b7280" font-size="12">17/06/26</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h2>Tabla de valores esperados</h2>
+      <table>
+        <thead>
+          <tr><th>PRD</th><th>Descripcion</th><th class="num">Objetivo 100%</th><th class="num">06/04/26</th><th class="num">15/04/26</th><th class="num">30/04/26</th><th class="num">15/05/26</th><th class="num">31/05/26</th><th class="num">10/06/26</th><th class="num">17/06/26</th></tr>
+        </thead>
+        <tbody><tr><td><strong>NGCX-2136</strong></td><td>Smart Purchase WhatsApp eSIM Flag</td><td class="num">20/05/26</td><td class="num">50,70%</td><td class="num">60,79%</td><td class="num">77,59%</td><td class="num">94,40%</td><td class="num">100,00%</td><td class="num">100,00%</td><td class="num">100,00%</td></tr><tr><td><strong>NGCX-2169</strong></td><td>Smart Purchase WhatsApp O2</td><td class="num">17/06/26</td><td class="num">30,75%</td><td class="num">39,41%</td><td class="num">53,84%</td><td class="num">68,26%</td><td class="num">83,65%</td><td class="num">93,27%</td><td class="num">100,00%</td></tr><tr><td><strong>NGCX-2585</strong></td><td>Smart Purchase Public Web eSIM Flag</td><td class="num">20/05/26</td><td class="num">47,41%</td><td class="num">58,17%</td><td class="num">76,10%</td><td class="num">94,02%</td><td class="num">100,00%</td><td class="num">100,00%</td><td class="num">100,00%</td></tr><tr><td><strong>NGCX-2609</strong></td><td>Smart Purchase Public Web O2</td><td class="num">17/06/26</td><td class="num">19,73%</td><td class="num">29,76%</td><td class="num">46,49%</td><td class="num">63,21%</td><td class="num">81,05%</td><td class="num">92,20%</td><td class="num">100,00%</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>Evolucion esperada vs real por PRD (hasta hoy)</h2>
+      <p class="muted">Eje X diario desde 29/03/26 hasta la fecha objetivo de cada PRD. La línea real se muestra solo hasta la fecha actual.</p>
+      <div class="mini-grid">
+        <div class="mini">
+    <h3>NGCX-2136 - Smart Purchase WhatsApp eSIM Flag</h3>
+    <svg viewBox="0 0 520 250">
+      <rect x="46" y="24" width="460" height="178" fill="none" stroke="#cbd5e1" />
+      <line x1="46" y1="113" x2="506" y2="113" stroke="#eef2f7" />
+      <line x1="46" y1="24" x2="506" y2="24" stroke="#e5e7eb" />
+      <polyline fill="none" stroke="#1d4ed8" stroke-width="2.4" points="46,127.7028 54.84615384615385,125.70851538461538 63.69230769230769,123.71423076923077 72.53846153846155,121.71994615384615 81.38461538461539,119.72566153846154 90.23076923076923,117.73137692307691 99.07692307692308,115.7370923076923 107.92307692307692,113.7428076923077 116.76923076923077,111.74852307692308 125.61538461538461,109.75423846153845 134.46153846153845,107.75995384615383 143.30769230769232,105.76566923076923 152.15384615384616,103.77138461538462 161,101.7771 169.84615384615384,99.78281538461539 178.69230769230768,97.78853076923076 187.53846153846155,95.79424615384616 196.3846153846154,93.79996153846155 205.23076923076923,91.80567692307692 214.07692307692307,89.81139230769232 222.92307692307693,87.81710769230769 231.76923076923077,85.82282307692304 240.6153846153846,83.82853846153847 249.46153846153845,81.83425384615386 258.3076923076923,79.83996923076921 267.1538461538462,77.84568461538461 276,75.8514 284.8461538461538,73.85711538461538 293.6923076923077,71.86283076923078 302.53846153846155,69.86854615384615 311.38461538461536,67.87426153846152 320.2307692307692,65.87997692307692 329.0769230769231,63.885692307692324 337.9230769230769,61.891407692307695 346.7692307692308,59.897123076923066 355.61538461538464,57.902838461538465 364.46153846153845,55.908553846153865 373.3076923076923,53.914269230769236 382.15384615384613,51.91998461538461 391,49.925700000000006 399.84615384615387,47.931415384615406 408.6923076923077,45.93713076923078 417.53846153846155,43.94284615384612 426.38461538461536,41.94856153846152 435.2307692307692,39.95427692307692 444.0769230769231,37.95999230769229 452.9230769230769,35.96570769230769 461.7692307692308,33.97142307692306 470.61538461538464,31.97713846153846 479.46153846153845,29.98285384615386 488.3076923076923,27.988569230769258 497.15384615384613,25.9942846153846 506,24" />
+      <polyline fill="none" stroke="#111827" stroke-width="2.3" stroke-dasharray="5 4" points="46,127.7028 116.76923076923077,127.7028 125.61538461538461,127.7028" />
+      <circle cx="46" cy="127.7028" r="3.2" fill="#111827" /><circle cx="116.76923076923077" cy="127.7028" r="3.2" fill="#111827" /><circle cx="125.61538461538461" cy="127.7028" r="3.2" fill="#111827" />
+      <text x="46" y="232" text-anchor="middle" fill="#6b7280" font-size="10">29/03/26</text><text x="107.92307692307692" y="232" text-anchor="middle" fill="#6b7280" font-size="10">05/04/26</text><text x="169.84615384615384" y="232" text-anchor="middle" fill="#6b7280" font-size="10">12/04/26</text><text x="231.76923076923077" y="232" text-anchor="middle" fill="#6b7280" font-size="10">19/04/26</text><text x="293.6923076923077" y="232" text-anchor="middle" fill="#6b7280" font-size="10">26/04/26</text><text x="355.61538461538464" y="232" text-anchor="middle" fill="#6b7280" font-size="10">03/05/26</text><text x="417.53846153846155" y="232" text-anchor="middle" fill="#6b7280" font-size="10">10/05/26</text><text x="479.46153846153845" y="232" text-anchor="middle" fill="#6b7280" font-size="10">17/05/26</text><text x="506" y="232" text-anchor="middle" fill="#6b7280" font-size="10">20/05/26</text>
+      <text x="38" y="206" text-anchor="end" fill="#6b7280" font-size="11">0%</text>
+      <text x="38" y="117" text-anchor="end" fill="#6b7280" font-size="11">50%</text>
+      <text x="38" y="28" text-anchor="end" fill="#6b7280" font-size="11">100%</text>
+    </svg>
+    <p class="mini-legend"><span class="s exp" style="background:#1d4ed8"></span>Esperado <span class="s real"></span>Real (hasta hoy)</p>
+  </div><div class="mini">
+    <h3>NGCX-2169 - Smart Purchase WhatsApp O2</h3>
+    <svg viewBox="0 0 520 250">
+      <rect x="46" y="24" width="460" height="178" fill="none" stroke="#cbd5e1" />
+      <line x1="46" y1="113" x2="506" y2="113" stroke="#eef2f7" />
+      <line x1="46" y1="24" x2="506" y2="24" stroke="#e5e7eb" />
+      <polyline fill="none" stroke="#059669" stroke-width="2.4" points="46,160.9532 51.75,159.241285 57.5,157.52937 63.25,155.817455 69,154.10554 74.75,152.393625 80.5,150.68171 86.25,148.969795 92,147.25788 97.75,145.545965 103.5,143.83405 109.25,142.12213500000001 115,140.41022 120.75,138.698305 126.5,136.98639000000003 132.25,135.274475 138,133.56256000000002 143.75,131.850645 149.5,130.13873 155.25,128.42681500000003 161,126.7149 166.75,125.00298500000001 172.5,123.29107 178.25,121.579155 184,119.86724 189.75,118.155325 195.5,116.44341 201.25,114.73149500000001 207,113.01958 212.75,111.307665 218.5,109.59575000000001 224.25,107.883835 230,106.17192000000001 235.75,104.46000500000002 241.5,102.74808999999999 247.25,101.036175 253,99.32426000000001 258.75,97.612345 264.5,95.90043 270.25,94.18851500000001 276,92.4766 281.75,90.76468500000001 287.5,89.05276999999998 293.25,87.34085499999999 299,85.62894 304.75,83.917025 310.5,82.20511 316.25,80.49319500000001 322,78.78128000000002 327.75,77.069365 333.5,75.35745000000001 339.25,73.64553500000002 345,71.93362000000002 350.75,70.22170500000001 356.5,68.50978999999998 362.25,66.797875 368,65.08596 373.75,63.374044999999995 379.5,61.66212999999999 385.25,59.950214999999986 391,58.23830000000001 396.75,56.526385000000005 402.5,54.81446999999997 408.25,53.102554999999995 414,51.39063999999999 419.75,49.678724999999986 425.5,47.96681000000001 431.25,46.254894999999976 437,44.54298 442.75,42.831064999999995 448.5,41.11915000000002 454.25,39.407235000000014 460,37.69531999999998 465.75,35.98340500000003 471.5,34.27149 477.25,32.559574999999995 483,30.84766000000002 488.75,29.135744999999986 494.5,27.42383000000001 500.25,25.711915000000005 506,24" />
+      <polyline fill="none" stroke="#111827" stroke-width="2.3" stroke-dasharray="5 4" points="46,160.9532 92,160.9532 97.75,160.9532" />
+      <circle cx="46" cy="160.9532" r="3.2" fill="#111827" /><circle cx="92" cy="160.9532" r="3.2" fill="#111827" /><circle cx="97.75" cy="160.9532" r="3.2" fill="#111827" />
+      <text x="46" y="232" text-anchor="middle" fill="#6b7280" font-size="10">29/03/26</text><text x="109.25" y="232" text-anchor="middle" fill="#6b7280" font-size="10">09/04/26</text><text x="172.5" y="232" text-anchor="middle" fill="#6b7280" font-size="10">20/04/26</text><text x="235.75" y="232" text-anchor="middle" fill="#6b7280" font-size="10">01/05/26</text><text x="299" y="232" text-anchor="middle" fill="#6b7280" font-size="10">12/05/26</text><text x="362.25" y="232" text-anchor="middle" fill="#6b7280" font-size="10">23/05/26</text><text x="425.5" y="232" text-anchor="middle" fill="#6b7280" font-size="10">03/06/26</text><text x="488.75" y="232" text-anchor="middle" fill="#6b7280" font-size="10">14/06/26</text><text x="506" y="232" text-anchor="middle" fill="#6b7280" font-size="10">17/06/26</text>
+      <text x="38" y="206" text-anchor="end" fill="#6b7280" font-size="11">0%</text>
+      <text x="38" y="117" text-anchor="end" fill="#6b7280" font-size="11">50%</text>
+      <text x="38" y="28" text-anchor="end" fill="#6b7280" font-size="11">100%</text>
+    </svg>
+    <p class="mini-legend"><span class="s exp" style="background:#059669"></span>Esperado <span class="s real"></span>Real (hasta hoy)</p>
+  </div><div class="mini">
+    <h3>NGCX-2585 - Smart Purchase Public Web eSIM Flag</h3>
+    <svg viewBox="0 0 520 250">
+      <rect x="46" y="24" width="460" height="178" fill="none" stroke="#cbd5e1" />
+      <line x1="46" y1="113" x2="506" y2="113" stroke="#eef2f7" />
+      <line x1="46" y1="24" x2="506" y2="24" stroke="#e5e7eb" />
+      <polyline fill="none" stroke="#b45309" stroke-width="2.4" points="46,134.627 54.84615384615385,132.4995576923077 63.69230769230769,130.37211538461537 72.53846153846155,128.24467307692308 81.38461538461539,126.11723076923076 90.23076923076923,123.98978846153845 99.07692307692308,121.86234615384615 107.92307692307692,119.73490384615384 116.76923076923077,117.60746153846154 125.61538461538461,115.48001923076923 134.46153846153845,113.35257692307692 143.30769230769232,111.22513461538462 152.15384615384616,109.0976923076923 161,106.97025 169.84615384615384,104.84280769230769 178.69230769230768,102.71536538461538 187.53846153846155,100.58792307692308 196.3846153846154,98.46048076923076 205.23076923076923,96.33303846153848 214.07692307692307,94.20559615384616 222.92307692307693,92.07815384615384 231.76923076923077,89.95071153846153 240.6153846153846,87.82326923076921 249.46153846153845,85.69582692307691 258.3076923076923,83.5683846153846 267.1538461538462,81.4409423076923 276,79.3135 284.8461538461538,77.18605769230767 293.6923076923077,75.0586153846154 302.53846153846155,72.93117307692307 311.38461538461536,70.80373076923078 320.2307692307692,68.67628846153849 329.0769230769231,66.54884615384617 337.9230769230769,64.42140384615385 346.7692307692308,62.29396153846153 355.61538461538464,60.16651923076924 364.46153846153845,58.03907692307692 373.3076923076923,55.9116346153846 382.15384615384613,53.78419230769231 391,51.65674999999999 399.84615384615387,49.5293076923077 408.6923076923077,47.40186538461538 417.53846153846155,45.27442307692306 426.38461538461536,43.146980769230765 435.2307692307692,41.019538461538474 444.0769230769231,38.892096153846154 452.9230769230769,36.76465384615386 461.7692307692308,34.63721153846157 470.61538461538464,32.50976923076922 479.46153846153845,30.38232692307693 488.3076923076923,28.25488461538461 497.15384615384613,26.12744230769232 506,24" />
+      <polyline fill="none" stroke="#111827" stroke-width="2.3" stroke-dasharray="5 4" points="46,134.627 116.76923076923077,134.627 125.61538461538461,134.627" />
+      <circle cx="46" cy="134.627" r="3.2" fill="#111827" /><circle cx="116.76923076923077" cy="134.627" r="3.2" fill="#111827" /><circle cx="125.61538461538461" cy="134.627" r="3.2" fill="#111827" />
+      <text x="46" y="232" text-anchor="middle" fill="#6b7280" font-size="10">29/03/26</text><text x="107.92307692307692" y="232" text-anchor="middle" fill="#6b7280" font-size="10">05/04/26</text><text x="169.84615384615384" y="232" text-anchor="middle" fill="#6b7280" font-size="10">12/04/26</text><text x="231.76923076923077" y="232" text-anchor="middle" fill="#6b7280" font-size="10">19/04/26</text><text x="293.6923076923077" y="232" text-anchor="middle" fill="#6b7280" font-size="10">26/04/26</text><text x="355.61538461538464" y="232" text-anchor="middle" fill="#6b7280" font-size="10">03/05/26</text><text x="417.53846153846155" y="232" text-anchor="middle" fill="#6b7280" font-size="10">10/05/26</text><text x="479.46153846153845" y="232" text-anchor="middle" fill="#6b7280" font-size="10">17/05/26</text><text x="506" y="232" text-anchor="middle" fill="#6b7280" font-size="10">20/05/26</text>
+      <text x="38" y="206" text-anchor="end" fill="#6b7280" font-size="11">0%</text>
+      <text x="38" y="117" text-anchor="end" fill="#6b7280" font-size="11">50%</text>
+      <text x="38" y="28" text-anchor="end" fill="#6b7280" font-size="11">100%</text>
+    </svg>
+    <p class="mini-legend"><span class="s exp" style="background:#b45309"></span>Esperado <span class="s real"></span>Real (hasta hoy)</p>
+  </div><div class="mini">
+    <h3>NGCX-2609 - Smart Purchase Public Web O2</h3>
+    <svg viewBox="0 0 520 250">
+      <rect x="46" y="24" width="460" height="178" fill="none" stroke="#cbd5e1" />
+      <line x1="46" y1="113" x2="506" y2="113" stroke="#eef2f7" />
+      <line x1="46" y1="24" x2="506" y2="24" stroke="#e5e7eb" />
+      <polyline fill="none" stroke="#be185d" stroke-width="2.4" points="46,182.7582 51.75,180.7737225 57.5,178.789245 63.25,176.8047675 69,174.82029 74.75,172.8358125 80.5,170.851335 86.25,168.86685749999998 92,166.88238 97.75,164.8979025 103.5,162.913425 109.25,160.9289475 115,158.94447 120.75,156.9599925 126.5,154.975515 132.25,152.9910375 138,151.00655999999998 143.75,149.0220825 149.5,147.037605 155.25,145.05312750000002 161,143.06865 166.75,141.0841725 172.5,139.099695 178.25,137.11521750000003 184,135.13074 189.75,133.1462625 195.5,131.161785 201.25,129.17730749999998 207,127.19283 212.75,125.20835249999999 218.5,123.22387499999999 224.25,121.23939750000001 230,119.25491999999998 235.75,117.27044249999999 241.5,115.28596499999999 247.25,113.30148750000001 253,111.31701 258.75,109.3325325 264.5,107.348055 270.25,105.36357749999999 276,103.3791 281.75,101.39462250000001 287.5,99.410145 293.25,97.4256675 299,95.44118999999999 304.75,93.4567125 310.5,91.472235 316.25,89.4877575 322,87.50327999999999 327.75,85.5188025 333.5,83.53432500000001 339.25,81.54984750000001 345,79.56537 350.75,77.58089249999999 356.5,75.596415 362.25,73.61193750000001 368,71.62746000000001 373.75,69.64298250000002 379.5,67.65850499999999 385.25,65.6740275 391,63.68955 396.75,61.7050725 402.5,59.720595 408.25,57.736117500000006 414,55.75163999999998 419.75,53.76716249999998 425.5,51.782685000000015 431.25,49.79820750000002 437,47.81372999999999 442.75,45.829252499999996 448.5,43.844775 454.25,41.8602975 460,39.875820000000004 465.75,37.89134249999998 471.5,35.90686500000001 477.25,33.92238750000001 483,31.937910000000016 488.75,29.95343249999999 494.5,27.968954999999994 500.25,25.984477499999997 506,24" />
+      <polyline fill="none" stroke="#111827" stroke-width="2.3" stroke-dasharray="5 4" points="46,182.7582 92,182.7582 97.75,182.7582" />
+      <circle cx="46" cy="182.7582" r="3.2" fill="#111827" /><circle cx="92" cy="182.7582" r="3.2" fill="#111827" /><circle cx="97.75" cy="182.7582" r="3.2" fill="#111827" />
+      <text x="46" y="232" text-anchor="middle" fill="#6b7280" font-size="10">29/03/26</text><text x="109.25" y="232" text-anchor="middle" fill="#6b7280" font-size="10">09/04/26</text><text x="172.5" y="232" text-anchor="middle" fill="#6b7280" font-size="10">20/04/26</text><text x="235.75" y="232" text-anchor="middle" fill="#6b7280" font-size="10">01/05/26</text><text x="299" y="232" text-anchor="middle" fill="#6b7280" font-size="10">12/05/26</text><text x="362.25" y="232" text-anchor="middle" fill="#6b7280" font-size="10">23/05/26</text><text x="425.5" y="232" text-anchor="middle" fill="#6b7280" font-size="10">03/06/26</text><text x="488.75" y="232" text-anchor="middle" fill="#6b7280" font-size="10">14/06/26</text><text x="506" y="232" text-anchor="middle" fill="#6b7280" font-size="10">17/06/26</text>
+      <text x="38" y="206" text-anchor="end" fill="#6b7280" font-size="11">0%</text>
+      <text x="38" y="117" text-anchor="end" fill="#6b7280" font-size="11">50%</text>
+      <text x="38" y="28" text-anchor="end" fill="#6b7280" font-size="11">100%</text>
+    </svg>
+    <p class="mini-legend"><span class="s exp" style="background:#be185d"></span>Esperado <span class="s real"></span>Real (hasta hoy)</p>
+  </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
