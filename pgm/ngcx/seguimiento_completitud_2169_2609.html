@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seguimiento de completitud NGCX-2169 y NGCX-2609</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --head: #123b63;
+      --green-bg: #e8f7ee;
+      --green-ink: #166534;
+      --amber-bg: #fff7e6;
+      --amber-ink: #92400e;
+      --red-bg: #fdecec;
+      --red-ink: #991b1b;
+      --blue-bg: #eaf2ff;
+      --blue-ink: #1d4ed8;
+      --input-bg: #fbfdff;
+    }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 Arial, sans-serif; }
+    .wrap { max-width: 1300px; margin: 24px auto; padding: 0 16px 32px; }
+    .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04); }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    h2 { margin: 0 0 12px; font-size: 20px; color: var(--head); }
+    p { margin: 0 0 10px; }
+    .muted { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: middle; }
+    th { background: #edf3f9; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .status { font-weight: 700; text-align: center; white-space: nowrap; }
+    .green { background: var(--green-bg); color: var(--green-ink); }
+    .amber { background: var(--amber-bg); color: var(--amber-ink); }
+    .red { background: var(--red-bg); color: var(--red-ink); }
+    .blue { background: var(--blue-bg); color: var(--blue-ink); }
+    input[type="number"] { width: 88px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--input-bg); font: inherit; text-align: right; }
+    .summary { display: grid; grid-template-columns: repeat(4, minmax(180px, 1fr)); gap: 12px; margin-top: 14px; }
+    .card { border: 1px solid var(--line); border-radius: 10px; padding: 12px; background: #fafcff; }
+    .card .k { color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+    .card .v { font-size: 22px; font-weight: 700; }
+    ul { margin: 8px 0 0 18px; padding: 0; }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <h1>Seguimiento de completitud para NGCX-2169 y NGCX-2609</h1>
+      <p>Objetivos calculados para llegar al <strong>100%</strong> el <strong>17/06/2026</strong>.</p>
+      <p class="muted">Base usada a fecha <strong>07/04/2026</strong>: NGCX-2169 = <strong>23,06%</strong>, NGCX-2609 = <strong>10,81%</strong>.</p>
+      <p class="muted">Puedes editar los campos de <strong>avance real</strong> y el semáforo se recalcula automáticamente.</p>
+    </div>
+    <div class="panel">
+      <h2>Seguimiento por hitos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th class="num">Objetivo 2169</th>
+            <th class="num">Real 2169</th>
+            <th class="num">Desviación 2169</th>
+            <th class="status">Semáforo 2169</th>
+            <th class="num">Objetivo 2609</th>
+            <th class="num">Real 2609</th>
+            <th class="num">Desviación 2609</th>
+            <th class="status">Semáforo 2609</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-target-2169="24.11" data-target-2609="12.03"><td>06/04/2026</td><td class="num">24,11%</td><td class="num"><input type="number" step="0.01" value="23.06" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">12,03%</td><td class="num"><input type="number" step="0.01" value="10.81" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+          <tr data-target-2169="33.60" data-target-2609="23.03"><td>15/04/2026</td><td class="num">33,60%</td><td class="num"><input type="number" step="0.01" value="" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">23,03%</td><td class="num"><input type="number" step="0.01" value="" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+          <tr data-target-2169="49.41" data-target-2609="41.35"><td>30/04/2026</td><td class="num">49,41%</td><td class="num"><input type="number" step="0.01" value="" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">41,35%</td><td class="num"><input type="number" step="0.01" value="" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+          <tr data-target-2169="65.22" data-target-2609="59.68"><td>15/05/2026</td><td class="num">65,22%</td><td class="num"><input type="number" step="0.01" value="" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">59,68%</td><td class="num"><input type="number" step="0.01" value="" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+          <tr data-target-2169="82.08" data-target-2609="79.23"><td>31/05/2026</td><td class="num">82,08%</td><td class="num"><input type="number" step="0.01" value="" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">79,23%</td><td class="num"><input type="number" step="0.01" value="" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+          <tr data-target-2169="92.62" data-target-2609="91.45"><td>10/06/2026</td><td class="num">92,62%</td><td class="num"><input type="number" step="0.01" value="" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">91,45%</td><td class="num"><input type="number" step="0.01" value="" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+          <tr data-target-2169="100.00" data-target-2609="100.00"><td>17/06/2026</td><td class="num">100,00%</td><td class="num"><input type="number" step="0.01" value="" data-real="2169" /></td><td class="num" data-delta="2169"></td><td class="status" data-status="2169"></td><td class="num">100,00%</td><td class="num"><input type="number" step="0.01" value="" data-real="2609" /></td><td class="num" data-delta="2609"></td><td class="status" data-status="2609"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    function formatPct(value){ return value.toFixed(2).replace('.', ',') + '%'; }
+    function evaluate(delta){ if(delta >= 0) return { cls:'green', text:'Verde' }; if(delta >= -5) return { cls:'amber', text:'Amarillo' }; return { cls:'red', text:'Rojo' }; }
+    function update(){
+      const rows = document.querySelectorAll('tbody tr[data-target-2169]');
+      rows.forEach((row) => {
+        ['2169','2609'].forEach((epic) => {
+          const target = Number(row.dataset['target' + epic]);
+          const input = row.querySelector('input[data-real="' + epic + '"]');
+          const deltaCell = row.querySelector('[data-delta="' + epic + '"]');
+          const statusCell = row.querySelector('[data-status="' + epic + '"]');
+          const raw = input.value.trim();
+          if(!raw){ deltaCell.textContent='-'; statusCell.textContent='-'; statusCell.className='status'; return; }
+          const real = Number(raw); const delta = real - target; const verdict = evaluate(delta);
+          deltaCell.textContent = (delta >= 0 ? '+' : '') + formatPct(delta);
+          statusCell.textContent = verdict.text;
+          statusCell.className = 'status ' + verdict.cls;
+        });
+      });
+    }
+    document.querySelectorAll('input[type="number"]').forEach((input) => input.addEventListener('input', update));
+    update();
+  </script>
+</body>
+</html>
